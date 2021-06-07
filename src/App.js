@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Grid } from '@material-ui/core';
+
+import CashflowReportCard from './components/CashflowReportCard/CashflowReportCardComponent';
 
 function App() {
+  const cashflowReportData = [
+    {
+      price:4500.82,
+      title:"Today"
+    },
+    {
+      price:20000.99,
+      title:"Current Week"
+    },
+    {
+      price:204500.16,
+      title:"Current Month"
+    },
+    {
+      price:1254500.25,
+      title:"Current Year"
+    }
+  ]
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App-container'>
+      <Grid container direction="row">
+        <Grid container item xs={3} >
+          <CashflowReportCard data={cashflowReportData[0]}/>
+        </Grid>
+        <Grid container item xs={3}>
+          <CashflowReportCard data={cashflowReportData[1]}/>
+        </Grid>
+        <Grid container item xs={3}>
+          <CashflowReportCard data={cashflowReportData[2]}/>
+        </Grid>
+        <Grid container item xs={3}>
+          <CashflowReportCard data={cashflowReportData[3]}/>
+        </Grid>
+        
+      </Grid>
     </div>
   );
 }
-
 export default App;

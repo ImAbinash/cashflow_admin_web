@@ -1,0 +1,22 @@
+.CFRC-Cardtitle{
+    margin: 0px;
+    font-weight: 500;
+    color: #c1c1c3;
+}
+
+.CFRC-Cardprice{
+    margin: 0;
+    font-weight: 500;
+}
+.CFRC-padding{
+    padding:10px;
+    background-color: red;
+}
+
+.CFRC-Card{
+    width:100%;
+    margin: 10px;
+}
+.CFRC-CardContent{
+    padding:11px !important;
+}
