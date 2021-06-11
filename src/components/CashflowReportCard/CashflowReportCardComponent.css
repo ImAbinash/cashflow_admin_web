@@ -17,6 +17,20 @@
     width:100%;
     margin: 10px;
 }
-.CFRC-CardContent{
-    padding:11px !important;
+.CFRC-Card :hover{
+    cursor:pointer;
 }
+.CFRC-CardContent{
+    padding:0px !important;
+}
+.CFRC-CardContentDetailsBlock{
+    margin-top: 27px;
+}
+/* svg{
+    height:100px;
+    width:100px;
+}
+svg rect{
+    height:100px;
+    width:100px;
+} */

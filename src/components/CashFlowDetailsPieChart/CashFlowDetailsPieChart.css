@@ -1,0 +1,11 @@
+.CFDPC-Card{
+    width:100%;
+    margin: 10px;
+    text-align: center;
+}
+.CFDPC-Card :hover{
+    cursor:pointer;
+}
+.CFDPC-CardContent{
+    padding:0px !important;
+}
